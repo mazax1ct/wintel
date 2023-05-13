@@ -28,7 +28,11 @@ body {
 
 .content {
     flex: 1 0 auto;
+    padding-top: 40px;
     padding-bottom: 80px;
+    @media(min-width: $sm) {
+        padding-top: 0;
+    }
 
     a:not([class]) {
         background: linear-gradient(to bottom, $gold-color 0%, $gold-color 100%);

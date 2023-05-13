@@ -182,14 +182,21 @@
         padding: 0;
         text-transform: uppercase;
         @media(min-width: $md) {
+            font-size: 14px;
             display: flex;
             order: 1;
+        }
+        @media(min-width: $hd) {
+            font-size: 16px;
         }
     }
 
     &__item {
         &:not(:last-child) {
             @media(min-width: $md) {
+                margin-right: 15px;
+            }
+            @media(min-width: $hd) {
                 margin-right: 25px;
             }
         }
@@ -231,8 +238,11 @@
         align-items: center;
         display: flex;
         @media(min-width: $md) {
-            margin-left: 50px;
+            margin-left: 20px;
             order: 2;
+        }
+        @media(min-width: $hd) {
+            margin-left: 50px;
         }
     }
 
