@@ -11,9 +11,9 @@ body {
     @media(min-width: $hd) {
         font-size: 16px;
     }
-    @media(min-width: $fhd) {
+    /*@media(min-width: $fhd) {
         font-size: 24px;
-    }
+    }*/
 }
 
 a {
@@ -45,6 +45,7 @@ h1 {
     }
     @media(min-width: $fhd) {
         font-size: 28px;
+        margin-bottom: 1.2em;
     }
 }
 
