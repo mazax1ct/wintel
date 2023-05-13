@@ -1,0 +1,13 @@
+.main-banner {
+    margin: 0 auto -40px;
+    max-width: 1440px;
+    @media(min-width: $md) {
+        margin-top: -28px;
+    }
+
+    img,
+    picture {
+        display: block;
+        width: 100%;
+    }
+}

@@ -1,0 +1,197 @@
+.footer {
+    background-color: $text-color;
+    color: #fff;
+
+    &__top {
+        max-width: 1080px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 30px $container-horizontal-padding-mobile 15px;
+        @media(min-width: $sm) {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        @media(min-width: $md) {
+            display: flex;
+            justify-content: space-between;
+            padding-left: $container-horizontal-padding;
+            padding-right: $container-horizontal-padding;
+        }
+    }
+
+    &__menu {
+        display: flex;
+        flex-wrap: wrap;
+        flex-grow: 1;
+        gap: 15px 30px;
+        justify-content: space-between;
+        max-width: 430px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 30px;
+        @media(min-width: 980px) {
+            margin-bottom: 0;
+        }
+    }
+
+    &__contacts {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 15px 30px;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 1.78571;
+        max-width: 430px;
+        margin-left: auto;
+        margin-right: auto;
+        @media(min-width: $sm) and (max-width: 980px - 1px) {
+            width: 100%;
+        }
+        @media(min-width: 980px) {
+            flex-direction: column;
+            gap: 0;
+            margin-left: 0;
+            margin-right: 0;
+        }
+
+        p {
+            &:not(:last-child) {
+                margin-bottom: 1em;
+            }
+        }
+
+        a {
+            color: #fff;
+            text-decoration: none;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+
+    &__socials {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    &__social {
+        display: block;
+
+        &:not(:last-child) {
+            margin-right: 24px;
+        }
+
+        svg {
+            display: block;
+            fill: #fff;
+            height: 24px;
+            transition: fill 0.3s;
+            width: 24px;
+        }
+
+        &:hover {
+            svg {
+                fill: $gold-color;
+            }
+        }
+    }
+
+    &__bottom {
+        border-top: 1px solid #957273;
+        min-height: 54px;
+        padding-top: 13px;
+        padding-bottom: 13px;
+    }
+}
+
+.footer-logo {
+    color: $orange-color;
+    line-height: 1;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    text-align: center;
+    white-space: nowrap;
+    width: 166px;
+    @media(min-width: $sm) {
+        margin-bottom: 0;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    &__title {
+        font-size: 24px;
+        text-transform: uppercase;
+    }
+
+    &__text {
+        font-size: 16px;
+    }
+}
+
+.footer-menu {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.78571;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    &__item {}
+
+    &__link {
+        color: #fff;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+.bottom-menu {
+    font-size: 14px;
+    line-height: 2;
+    list-style: none;
+    margin: 0 auto;
+    max-width: $container-max-width;
+    padding-left: $container-horizontal-padding-mobile;
+    padding-right: $container-horizontal-padding-mobile;
+    text-align: center;
+    @media(min-width: $sm) {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+    @media(min-width: $md) {
+        padding-left: $container-horizontal-padding;
+        padding-right: $container-horizontal-padding;
+    }
+
+    &__item {
+        &:not(:last-child) {
+            @media(max-width: $sm - 1px) {
+                margin-bottom: 10px;
+            }
+        }
+        @media(min-width: $sm) {
+            margin-left: 25px;
+            margin-right: 25px;
+        }
+    }
+
+    &__link {
+        color: #957273;
+        display: inline-block;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}

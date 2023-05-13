@@ -1,0 +1,105 @@
+html {
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
+}
+
+body {
+    color: $text-color;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+    @media(min-width: $hd) {
+        font-size: 16px;
+    }
+    @media(min-width: $fhd) {
+        font-size: 24px;
+    }
+}
+
+a {
+    color: $text-color;
+    transition: color 0.3s;
+}
+
+button,
+input,
+select,
+textarea {
+    font-family: 'Inter', sans-serif;
+}
+
+img {
+    height: auto;
+    max-width: 100%;
+    vertical-align: top;
+}
+
+.h1,
+h1 {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 1.5em;
+    text-transform: uppercase;
+    @media(min-width: $hd) {
+        font-size: 24px;
+    }
+    @media(min-width: $fhd) {
+        font-size: 28px;
+    }
+}
+
+.h2,
+h2 {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 0;
+    text-transform: uppercase;
+    @media(min-width: $hd) {
+        font-size: 22px;
+    }
+    @media(min-width: $fhd) {
+        font-size: 24px;
+    }
+
+    &.text-center {
+        margin-bottom: 1.5em;
+    }
+}
+
+.h3,
+h3 {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 0;
+    @media(min-width: $hd) {
+        font-size: 18px;
+    }
+    @media(min-width: $fhd) {
+        font-size: 20px;
+    }
+
+    &.text-center {
+        margin-bottom: 1.5em;
+    }
+}
+
+p {
+    &:not(:last-child) {
+        margin-bottom: 1.2em;
+    }
+}
+
+ol,
+ul {
+    list-style-position: inside;
+
+    &:not([class]) {
+        &:not(:last-child) {
+            margin-bottom: 1em;
+        }
+    }
+}
+
+.text-center {
+    text-align: center;
+}

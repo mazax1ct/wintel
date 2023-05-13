@@ -1,0 +1,63 @@
+*,
+::after,
+::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100%;
+}
+
+body,
+html {
+    scrollbar-gutter: stable;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    overflow-x: hidden;
+
+    &.overflow {
+        overflow: hidden;
+    }
+}
+
+.content {
+    flex: 1 0 auto;
+    padding-bottom: 80px;
+
+    a:not([class]) {
+        background: linear-gradient(to bottom, $gold-color 0%, $gold-color 100%);
+        background-position: 0 100%;
+        background-repeat: repeat-x;
+        background-size: 0 0;
+        text-decoration: none;
+        transition: background-size 0.3s;
+
+        &:hover {
+            background-size: 4px 100%;
+        }
+    }
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: $container-max-width;
+    padding-left: $container-horizontal-padding-mobile;
+    padding-right: $container-horizontal-padding-mobile;
+    @media(min-width: $md) {
+        padding-left: $container-horizontal-padding;
+        padding-right: $container-horizontal-padding;
+    }
+}
+
+.text-block {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1040px;
+}
