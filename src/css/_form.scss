@@ -1,0 +1,15 @@
+.form {
+    h2 {
+        color: $orange-color;
+        margin-bottom: 2em;
+    }
+
+    .input-label {
+        margin-bottom: 1em;
+    }
+
+    &__button-block {
+        margin-top: 3rem;
+        text-align: center;
+    }
+}

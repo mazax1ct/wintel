@@ -1,0 +1,28 @@
+.title-block {
+    margin-bottom: 2em;
+    position: relative;
+    z-index: auto;
+
+    h1 {
+        margin-bottom: 0;
+        text-align: center;
+    }
+
+    &__right-block {
+        @media(min-width: $sm) {
+            left: auto;
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 1;
+        }
+    }
+
+    &__bonus {
+        color: $orange-color;
+        font-size: 20px;
+        font-weight: 700;
+        text-align: center;
+    }
+}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+    <title>Wintel Tour</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+
+    //= template/favicon.html
+
+    //= template/fonts.html
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="bg-map">
+    //= template/sprite.html
+
+    //= template/header.html
+
+    <div class="main-banner">
+        <img src="images/content/banners/img_1.jpg" alt="">
+    </div>
+
+    //= template/nav.html
+
+    <main class="content">
+        <ul class="breadcrumbs">
+            <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Головна</a></li>
+            <li>Підбір туру</li>
+        </ul>
+
+        <div class="container">
+            <h1 class="text-center">Підбір туру</h1>
+
+            <p class="text-center"><b>Заповніть будь ласка форму з вашими<br> побажаннями, наш менеджер<br> зв’яжеться з вами протягом години</b></p>
+
+            <div class="get-tour form">
+                <form action="">
+                    <label class="input-label">
+                        <input class="input" type="text" name="where" value="" placeholder="Куди:">
+                    </label>
+
+                    <label class="input-label">
+                        <input class="input" type="text" name="when" value="" placeholder="Коли:">
+                    </label>
+
+                    <label class="input-label">
+                        <input class="input" type="text" name="days" value="" placeholder="Тривалість:">
+                    </label>
+
+                    <label class="input-label">
+                        <input class="input" type="text" name="who" value="" placeholder="Хто іде:">
+                    </label>
+
+                    <label class="input-label">
+                        <input class="input" type="text" name="phone" value="" placeholder="Телефон:">
+                    </label>
+
+                    <label class="input-label">
+                        <input class="input" type="text" name="email" value="" placeholder="E-mail:">
+                    </label>
+
+                    <label class="input-label">
+                        <textarea class="textarea" name="message" placeholder="Побажання:"></textarea>
+                    </label>
+
+                    <div class="form__button-block">
+                        <button class="button button--type_2" type="submit"><span>відправити</span></button>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </main>
+
+    //= template/footer.html
+
+    //= template/scripts.html
+
+</body>
+
+</html>

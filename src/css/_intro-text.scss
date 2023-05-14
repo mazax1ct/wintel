@@ -1,0 +1,5 @@
+.intro-text {
+    &:not(:last-child) {
+        margin-bottom: 3em;
+    }
+}

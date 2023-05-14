@@ -1,0 +1,28 @@
+.page_404 {
+    text-align: center;
+    @media(min-width: $sm) {
+        padding-top: 40px;
+    }
+
+    h1 {
+        color: $orange-color;
+        font-size: 40px;
+        line-height: 1;
+        margin-bottom: 0.5em;
+        @media(min-width: $sm) {
+            font-size: 52px;
+        }
+        @media(min-width: $md) {
+            font-size: 64px;
+        }
+
+        small {
+            font-size: 60%;
+        }
+    }
+
+    p {
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+}

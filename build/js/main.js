@@ -9,3 +9,10 @@ $(document).on('click', '.js-menu-closer', function () {
   $('.main-menu').removeClass('is-open');
   return false;
 });
+
+
+$(document).on('click', '.accordion__toggler', function () {
+  $(this).toggleClass('is-active');
+  $(this).closest('.accordion').find('.accordion__body').slideToggle();
+  return false;
+});

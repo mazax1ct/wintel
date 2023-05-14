@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+    <title>Wintel Tour</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+
+    //= template/favicon.html
+
+    //= template/fonts.html
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    //= template/sprite.html
+
+    //= template/header.html
+
+    <div class="main-banner">
+        <img src="images/content/banners/img_1.jpg" alt="">
+    </div>
+
+    //= template/nav.html
+
+    <main class="content">
+        <ul class="breadcrumbs">
+            <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Головна</a></li>
+            <li>Контакти</li>
+        </ul>
+
+        <div class="container">
+            <h1 class="text-center">Контакти</h1>
+
+            <div class="contacts">
+                <div class="contacts__block">
+                    <h3>Адреса</h3>
+                    <p>
+                        Київ, 01135 Україна<br> ул. Павловская, 29<br>
+                        <b>График роботы:</b><br>
+                        Пн-Пт з 09:00 до 00:00<br>
+                        Сб-нд з 10:00 до 19:00
+                    </p>
+                </div>
+
+                <div class="contacts__block">
+                    <h3>Телефон</h3>
+                    <p><a href="tel:+380500644333">+38 050 06 44 333</a></p>
+
+                    <h3>Єлектрона скринька</h3>
+                    <p><a href="mailto:info@winteltour.com.ua">info@winteltour.com.ua</a></p>
+                </div>
+
+                <div class="contacts__block">
+                    <h3>Телеграм</h3>
+                    <p><a href="https://t.me/winteltourua" target="_blank">https://t.me/winteltourua</a></p>
+
+                    <h3>Інстаграм</h3>
+                    <p><a href="https://www.instagram.com/winteltour.ua/" target="_blank">winteltour.ua</a></p>
+                </div>
+            </div>
+
+            <div class="contacts-form">
+                <div class="contacts-form__map">
+                    <img src="images/content/contacts/map.jpg" alt="">
+                </div>
+                <div class="contacts-form__form form">
+                    <h2>Зв'язатися з нами</h2>
+                    <form action="">
+                        <label class="input-label error">
+                            <input class="input error" type="text" name="name" value="" placeholder="Ваше ім’я:">
+                            <span class="input-label__text">Не заполнено ім’я</span>
+                        </label>
+
+                        <label class="input-label">
+                            <input class="input" type="text" name="phone" value="" placeholder="Телефон:">
+                        </label>
+
+                        <label class="input-label">
+                            <input class="input" type="text" name="email" value="" placeholder="E-mail:">
+                        </label>
+
+                        <label class="input-label">
+                            <textarea class="textarea" name="message" placeholder="Повідомлення:"></textarea>
+                        </label>
+
+                        <div class="form__button-block">
+                            <button class="button button--type_2" type="submit"><span>відправити</span></button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    //= template/footer.html
+
+    //= template/scripts.html
+
+</body>
+
+</html>
