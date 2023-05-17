@@ -13,7 +13,7 @@
     text-align: center;
     text-decoration: none;
     text-transform: uppercase;
-    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s, box-shadow 0.3s;
     user-select: none;
     vertical-align: top;
 
@@ -80,6 +80,31 @@
         & > * {
             position: relative;
             z-index: 1;
+        }
+
+        &.disabled,
+        &:disabled {
+            background-color: #ccc;
+        }
+    }
+
+    &--type_3 {
+        border: none;
+        background-color: #fff;
+        padding: 4px 8px;
+        text-transform: none;
+
+        img {
+            min-width: 25px;
+            margin-right: 8px;
+        }
+
+        &:not(.disabled),
+        &:not(:disabled) {
+            &:active,
+            &:hover {
+                box-shadow: 0 0 5px 0 rgba(#000, 0.25);
+            }
         }
 
         &.disabled,

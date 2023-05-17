@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+    <title>Wintel Tour</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+
+    //= template/favicon.html
+
+    //= template/fonts.html
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    //= template/sprite.html
+
+    //= template/header.html
+
+    <div class="main-banner">
+        <img src="images/content/banners/img_1.jpg" alt="">
+    </div>
+
+    //= template/nav.html
+
+    <main class="content">
+        <ul class="breadcrumbs">
+            <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Головна</a></li>
+            <li>Авіаквитки</li>
+        </ul>
+
+        <div class="container">
+
+            <h1 class="text-center">Авіаквитки</h1>
+
+            <form class="avia">
+                <div class="avia__item avia__item--where">
+                    <div class="from-to">
+                        <div class="from-to__item">
+                            <label class="input-label">
+                                <span class="from-to__title">Звідки?</span>
+                                <input class="input" type="text" name="from" value="">
+                            </label>
+                        </div>
+                        <img width="42" height="34" src="images/icons/from-to.svg" alt="">
+                        <div class="from-to__item">
+                            <label class="input-label">
+                                <span class="from-to__title">Куди?</span>
+                                <input class="input" type="text" name="to" value="">
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="avia__item avia__item--who">
+                    <label class="js-dropdown-opener input-label">
+                        <span class="avia__title">Кто?</span>
+                        <input class="input" type="text" name="who" value="" readonly>
+                    </label>
+                    <div class="dropdown">
+                        <div class="dropdown__item">
+                            <div class="dropdown__item-info">
+                                <p class="dropdown__item-title">Дорослі</p>
+                                <p class="dropdown__item-note">14+років</p>
+                            </div>
+                            <div class="qnt">
+                                <button class="qnt__button" type="button" title="Уменьшить">-</button>
+                                <input class="qnt__input" type="text" value="0">
+                                <button class="qnt__button" type="button" title="Увеличить">+</button>
+                            </div>
+                        </div>
+                        <div class="dropdown__item">
+                            <div class="dropdown__item-info">
+                                <p class="dropdown__item-title">Діти</p>
+                                <p class="dropdown__item-note">0-14 років</p>
+                            </div>
+                            <div class="qnt">
+                                <button class="qnt__button" type="button" title="Уменьшить">-</button>
+                                <input class="qnt__input" type="text" value="0">
+                                <button class="qnt__button" type="button" title="Увеличить">+</button>
+                            </div>
+                        </div>
+                        <div class="dropdown__button-block">
+                            <button class="js-dropdown-closer button button--type_2" type="button"><span>OK</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="avia__item avia__item--when">
+                    <label class="input-label">
+                        <span class="avia__title">Коли?</span>
+                        <input class="input" type="date" name="when" value="">
+                    </label>
+                </div>
+
+                <div class="avia__button-block">
+                    <button class="button button--type_2" type="submit"><span>Пошук білетів</span></button>
+                </div>
+            </form>
+
+        </div>
+    </main>
+
+    //= template/footer.html
+
+    //= template/scripts.html
+
+</body>
+
+</html>

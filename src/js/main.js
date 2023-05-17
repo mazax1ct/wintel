@@ -16,3 +16,13 @@ $(document).on('click', '.accordion__toggler', function () {
   $(this).closest('.accordion').find('.accordion__body').slideToggle();
   return false;
 });
+
+$(document).on('click', '.js-dropdown-opener', function () {
+  $(this).closest('.avia__item').find('.dropdown').addClass('is-open');
+  return false;
+});
+
+$(document).on('click', '.js-dropdown-closer', function () {
+  $(this).closest('.dropdown').removeClass('is-open');
+  return false;
+});

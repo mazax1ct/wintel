@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+    <title>Wintel Tour</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+
+    //= template/favicon.html
+
+    //= template/fonts.html
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    //= template/sprite.html
+
+    //= template/header.html
+
+    <div class="main-banner">
+        <img src="images/content/banners/img_1.jpg" alt="">
+    </div>
+
+    //= template/nav.html
+
+    <main class="content">
+        <ul class="breadcrumbs">
+            <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Головна</a></li>
+            <li>Особистий кабінет</li>
+        </ul>
+
+        <div class="container">
+
+            <div class="title-block">
+                <h1>Особистий кабінет</h1>
+                <div class="title-block__right-block">
+                    <p class="title-block__bonus">0 бонусів</p>
+                    <p><a href="#">О бонусній системі</a></p>
+                </div>
+            </div>
+
+            <ul class="personal-menu">
+                <li class="personal-menu__item">
+                    <a class="personal-menu__link is-active" href="#">Авіа</a>
+                </li>
+                <li class="personal-menu__item">
+                    <a class="personal-menu__link" href="#">Залізниця</a>
+                </li>
+                <li class="personal-menu__item">
+                    <a class="personal-menu__link" href="#">Автобуси</a>
+                </li>
+                <li class="personal-menu__item">
+                    <a class="personal-menu__link" href="#">Готелі</a>
+                </li>
+                <li class="personal-menu__item">
+                    <a class="personal-menu__link" href="#">Страхування</a>
+                </li>
+                <li class="personal-menu__item">
+                    <a class="personal-menu__link" href="#">Мої бонуси</a>
+                </li>
+                <li class="personal-menu__item">
+                    <a class="personal-menu__link" href="#">Мій профіль</a>
+                </li>
+                <li class="personal-menu__item">
+                    <a class="personal-menu__link" href="#">Пасажири</a>
+                </li>
+            </ul>
+
+            <ul class="tabs-menu">
+                <li class="tabs-menu__item">
+                    <button class="tabs-menu__button is-active" href="#">всі</button>
+                </li>
+                <li class="tabs-menu__item">
+                    <a class="tabs-menu__button" href="#">оформлені</a>
+                </li>
+                <li class="tabs-menu__item">
+                    <a class="tabs-menu__button" href="#">скасовані</a>
+                </li>
+            </ul>
+
+            <div class="tickets">
+                <div class="tickets__top">
+                    <ul class="tabs-menu">
+                        <li class="tabs-menu__item">
+                            <button class="tabs-menu__button is-active" href="#">За весь час</button>
+                        </li>
+                        <li class="tabs-menu__item">
+                            <button class="tabs-menu__button" href="#">День</button>
+                        </li>
+                        <li class="tabs-menu__item">
+                            <button class="tabs-menu__button" href="#">Тиждень</button>
+                        </li>
+                        <li class="tabs-menu__item">
+                            <button class="tabs-menu__button" href="#">Місяц</button>
+                        </li>
+                    </ul>
+                    <div class="tickets__period">
+                        <span class="tickets__period-title">Період:</span>
+                        <label class="input-label">
+                            <input class="input" type="date" name="period_start" value="">
+                        </label>
+                        <label class="input-label">
+                            <input class="input" type="date" name="period_end" value="">
+                        </label>
+                    </div>
+                    <div class="tickets__top-button">
+                        <button class="button button--type_2" type="submit"><span>Застосувати</span></button>
+                    </div>
+                </div>
+
+                <div class="tickets__table">
+                    <table>
+                        <tr>
+                            <th>Номер замовлення:</th>
+                            <th>Виліт:</th>
+                            <th>Маршрут:</th>
+                            <th>Пасажири:</th>
+                        </tr>
+                        <tr>
+                            <td data-title="Номер замовлення:">#345345345345</td>
+                            <td data-title="Виліт:">05.05.2023</td>
+                            <td data-title="Маршрут:">Киев - Анталия</td>
+                            <td data-title="Пасажири:">2</td>
+                        </tr>
+                        <tr>
+                            <td data-title="Номер замовлення:">#345345345345</td>
+                            <td data-title="Виліт:">05.05.2023</td>
+                            <td data-title="Маршрут:">Киев - Анталия</td>
+                            <td data-title="Пасажири:">2</td>
+                        </tr>
+                        <tr>
+                            <td class="no-results" colspan="4">Нема даних для відображення...</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    //= template/footer.html
+
+    //= template/scripts.html
+
+</body>
+
+</html>

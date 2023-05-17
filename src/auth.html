@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+    <title>Wintel Tour</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+
+    //= template/favicon.html
+
+    //= template/fonts.html
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    //= template/sprite.html
+
+    //= template/header.html
+
+    <div class="main-banner">
+        <img src="images/content/banners/img_1.jpg" alt="">
+    </div>
+
+    //= template/nav.html
+
+    <main class="content">
+        <ul class="breadcrumbs">
+            <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Головна</a></li>
+            <li>Увійти/зареєструватись</li>
+        </ul>
+
+        <div class="container">
+
+
+            <h1 class="text-center">Особистий кабінет</h1>
+
+            <div class="auth-form form">
+                <form action="">
+                    <label class="input-label error">
+                        <input class="input error" type="text" name="name" value="" placeholder="Ваше ім’я:">
+                        <span class="input-label__text">Не заполнено ім’я</span>
+                    </label>
+
+                    <label class="input-label">
+                        <input class="input" type="text" name="phone" value="" placeholder="Телефон:">
+                    </label>
+
+                    <label class="input-label">
+                        <input class="input" type="text" name="email" value="" placeholder="E-mail:">
+                    </label>
+
+                    <label class="input-label">
+                        <textarea class="textarea" name="message" placeholder="Повідомлення:"></textarea>
+                    </label>
+
+                    <div class="form__button-block">
+                        <button class="button button--type_2" type="submit"><span>Зареєструватись</span></button><br>
+                        <button class="button button--type_3" type="button">
+                            <img width="25" height="25" src="images/icons/google.png" alt="">
+                            <span>Увійти через Google</span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </main>
+
+    //= template/footer.html
+
+    //= template/scripts.html
+
+</body>
+
+</html>
