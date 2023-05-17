@@ -432,3 +432,119 @@
         }
     }
 }
+
+.passengers {
+    align-items: center;
+    box-shadow: 0 0 5px 0 rgba(#000, 0.25);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-between;
+    padding: 48px 10px;
+    @media(min-width: $hd) {
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+
+    .input-label {
+        width: 100%;
+        @media(min-width: $sm) {
+            max-width: 520px;
+        }
+    }
+
+    .input {
+        height: 35px;
+    }
+
+    &__button-block {
+        text-align: center;
+        @media(max-width: $sm - 1px) {
+            width: 100%;
+        }
+    }
+}
+
+.popup-is-open {
+    overflow: hidden;
+    scrollbar-gutter: stable;
+}
+
+.popups-container {
+    bottom: 0;
+    display: none;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 100;
+}
+
+.popup-shade {
+    background-color: rgba($text-color, 0.6);
+    bottom: 0;
+    display: none;
+    left: 0;
+    overflow-y: auto;
+    padding: 10px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 1;
+    @media(min-width: $hd) {
+        padding: 24px;
+        scrollbar-gutter: stable;
+    }
+}
+
+.popup {
+    background-color: #fff;
+    margin: auto;
+    max-width: 700px;
+    padding: 20px;
+    width: 100%;
+    @media(min-width: $sm) {
+        padding: 48px;
+    }
+}
+
+.passengers-form {
+    &__row {
+        margin-bottom: 10px;
+        @media(min-width: $sm) {
+            align-items: center;
+            display: flex;
+            margin-bottom: 20px;
+        }
+    }
+
+    &__title {
+        color: #B3B3B3;
+        display: block;
+        font-size: 14px;
+        margin-bottom: 10px;
+        @media(min-width: $sm) {
+            min-width: 160px;
+            margin-bottom: 0;
+            padding-right: 10px;
+            width: 160px;
+        }
+    }
+
+    .input-label {
+        flex-grow: 1;
+    }
+
+    .radios {
+        display: flex;
+    }
+
+    .radio {
+        margin-right: 10px;
+    }
+
+    &__button-block {
+        margin-top: 40px;
+        text-align: center;
+    }
+}

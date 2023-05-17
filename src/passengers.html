@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+    <title>Wintel Tour</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+
+    //= template/favicon.html
+
+    //= template/fonts.html
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    //= template/sprite.html
+
+    //= template/header.html
+
+    <div class="main-banner">
+        <img src="images/content/banners/img_1.jpg" alt="">
+    </div>
+
+    //= template/nav.html
+
+    <main class="content">
+        <ul class="breadcrumbs">
+            <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Головна</a></li>
+            <li>Авіаквитки</li>
+        </ul>
+
+        <div class="container">
+
+            <div class="title-block">
+                <h1>Особистий кабінет</h1>
+                <div class="title-block__right-block">
+                    <p class="title-block__bonus">0 бонусів</p>
+                    <p><a href="#">О бонусній системі</a></p>
+                </div>
+            </div>
+
+            <ul class="personal-menu">
+                <li class="personal-menu__item">
+                    <a class="personal-menu__link" href="#">Авіа</a>
+                </li>
+                <li class="personal-menu__item">
+                    <a class="personal-menu__link" href="#">Залізниця</a>
+                </li>
+                <li class="personal-menu__item">
+                    <a class="personal-menu__link" href="#">Автобуси</a>
+                </li>
+                <li class="personal-menu__item">
+                    <a class="personal-menu__link" href="#">Готелі</a>
+                </li>
+                <li class="personal-menu__item">
+                    <a class="personal-menu__link" href="#">Страхування</a>
+                </li>
+                <li class="personal-menu__item">
+                    <a class="personal-menu__link" href="#">Мої бонуси</a>
+                </li>
+                <li class="personal-menu__item">
+                    <a class="personal-menu__link" href="#">Мій профіль</a>
+                </li>
+                <li class="personal-menu__item">
+                    <a class="personal-menu__link is-active" href="#">Пасажири</a>
+                </li>
+            </ul>
+
+            <form class="passengers">
+                <label class="input-label">
+                    <input class="input" type="text" name="" value="">
+                </label>
+
+                <div class="passengers__button-block">
+                    <button class="js-popup-opener button button--type_2" type="button" data-popup="passengers"><span>+Добавити пасажира</span></button>
+                </div>
+            </form>
+
+            <div class="popups-container">
+                <div class="popup-shade" data-popup="passengers">
+                    <div class="popup">
+                        <p class="h1 text-center">Добавити пасажира</p>
+                        <form class="passengers-form" action="">
+                            <div class="passengers-form__row">
+                                <span class="passengers-form__title">Призвище:</span>
+                                <label class="input-label">
+                                    <input class="input" type="text" name="lastname" value="" placeholder="Призвище:">
+                                </label>
+                            </div>
+                            <div class="passengers-form__row">
+                                <span class="passengers-form__title">Ім’я:</span>
+                                <label class="input-label">
+                                    <input class="input" type="text" name="name" value="" placeholder="Ім’я:">
+                                </label>
+                            </div>
+                            <div class="passengers-form__row">
+                                <span class="passengers-form__title">По-батькові:</span>
+                                <label class="input-label">
+                                    <input class="input" type="text" name="second_name" value="" placeholder="По-батькові:">
+                                </label>
+                            </div>
+                            <div class="passengers-form__row">
+                                <span class="passengers-form__title">Стать:</span>
+                                <div class="radios">
+                                    <label class="radio">
+                                        <input type="radio" name="stat" value="m">
+                                        <span class="radio__text">Ч</span>
+                                    </label>
+                                    <label class="radio">
+                                        <input type="radio" name="stat" value="f">
+                                        <span class="radio__text">Ж</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="passengers-form__row">
+                                <span class="passengers-form__title">Тип пасажира:</span>
+                                <div class="select">
+                                    <select>
+                                        <option value="1">Дорослий 26-60 років</option>
+                                        <option value="2">Молодіжний до 25 років</option>
+                                        <option value="3">Дитина 2 года - 11 років</option>
+                                        <option value="4">Немовля з місцем до 2 років</option>
+                                        <option value="5">Немовля без місця до 2 років</option>
+                                        <option value="6">Літня людина 60+ років</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="passengers-form__row">
+                                <span class="passengers-form__title">Дата народження:</span>
+                                <label class="input-label">
+                                    <input class="input" type="date" name="birth" value="" style="z-index: 1000">
+                                </label>
+                            </div>
+                            <div class="passengers-form__row">
+                                <span class="passengers-form__title">Серія та номер паспорта:</span>
+                                <label class="input-label">
+                                    <input class="input" type="text" name="passport" value="" placeholder="Серія та номер паспорта:">
+                                </label>
+                            </div>
+                            <div class="passengers-form__row">
+                                <span class="passengers-form__title">Громадянство:</span>
+                                <label class="input-label">
+                                    <input class="input" type="text" name="citizenship" value="" placeholder="Громадянство:">
+                                </label>
+                            </div>
+                            <div class="passengers-form__button-block">
+                                <button class="button button--type_2" type="submit"><span>+ пасажир</span></button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    //= template/footer.html
+
+    //= template/scripts.html
+
+</body>
+
+</html>
