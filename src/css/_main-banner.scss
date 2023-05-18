@@ -1,13 +1,57 @@
 .main-banner {
-    margin: 0 auto -40px;
-    max-width: 1440px;
+    background-color: $orange-color;
+    color: #fff;
     @media(min-width: $md) {
         margin-top: -28px;
+        margin-bottom: -40px;
+    }
+    @media(max-width: $md - 1px) {
+        text-align: center;
     }
 
-    img,
-    picture {
-        display: block;
+    &__inner {
+        margin: 0 auto;
+        max-width: 1440px;
+        position: relative;
+        z-index: auto;
+    }
+
+    &__content {
+        left: 50%;
+        max-width: $container-max-width;
+        padding-left: $container-horizontal-padding-mobile;
+        padding-right: $container-horizontal-padding-mobile;
+        position: absolute;
+        top: 50%;
+        transform: translate(-50%, -50%);
         width: 100%;
+        z-index: 1;
+        @media(min-width: $md) {
+            padding-left: 100px;
+            padding-right: 100px;
+            font-size: 24px;
+        }
+        @media(min-width: $fhd) {
+            font-size: 28px;
+        }
+    }
+
+    img {
+        display: block;
+        min-height: 400px;
+        object-fit: cover;
+        object-position: left;
+        width: 100%;
+    }
+
+    .h1,
+    h1 {
+        @media(min-width: $md) {
+            font-size: 40px;
+            margin-bottom: 0;
+        }
+        @media(min-width: $fhd) {
+            font-size: 60px;
+        }
     }
 }

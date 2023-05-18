@@ -200,6 +200,12 @@
                 margin-right: 25px;
             }
         }
+
+        &--mobile {
+            @media(min-width: $md) {
+                display: none;
+            }
+        }
     }
 
     &__link {
